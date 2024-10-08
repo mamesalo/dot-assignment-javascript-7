@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      .container {
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        width: 350px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      .container p {
+        font-size: xx-large;
+        margin: 0;
+      }
+      .container button {
+        background-color: transparent;
+        border: 2px solid grey;
+        border-radius: 8px;
+        padding: 10px 15px;
+        font-weight: 500;
+      }
+      .container button:hover {
+        background-color: rgb(93, 93, 236);
+        color: white;
+      }
+      #counter {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>COUNTER</p>
+      <p id="counter">0</p>
+      <div class="btn-group">
+        <button onclick="increase()">Increase</button>
+        <button onclick="decrease()">Decrease</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
